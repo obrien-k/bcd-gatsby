@@ -1,7 +1,6 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a> + <img alt ="BigCommerce" src="https://wwwcdn.bigcommerce.com/www1.bigcommerce.com/assets/mediakit/downloads/BigCommerce-logomark-whitebg.png?mtime=20160412110957" width="60" />
+  <a href="https://bigcommerce.com"><img alt ="BigCommerce" src="https://wwwcdn.bigcommerce.com/www1.bigcommerce.com/assets/mediakit/downloads/BigCommerce-logomark-whitebg.png?mtime=20160412110957" width="60" /></a>
+  +  <a href="https://www.gatsbyjs.org"><img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" /></a> 
 </p>
 <h1 align="center">
   BigCom.dev - Gatsby
@@ -9,19 +8,9 @@
 
 This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React. Implemented is <a href="https://github.com/thirdandgrove/gatsby-source-bigcommerce">gatsby-source-bigcommerce</a>, which allows you to provide API credentials to connect with a BigCommerce store.
 
-Add a .env.development file to include local environment variables for
+To include your store's [API credentials generated on BigCommerce](https://developer.bigcommerce.com/api-docs/getting-started/authentication), add a .env.development file to include local environment variables or something like [Netlify's build variables](https://www.netlify.com/docs/continuous-deployment/).
 
-CLIENT
-
-TOKEN
-
-SECRET
-
-HASH
-
-or something like [Netlify's build variables](https://www.netlify.com/docs/continuous-deployment/) using [API credentials generated on BigCommerce](https://developer.bigcommerce.com/api-docs/getting-started/authentication).
-
-_You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+_You may want to check out our vibrant collection of [official and community-created starters]()._
 
 ## 🚀 Quick start
 
