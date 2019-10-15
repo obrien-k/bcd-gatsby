@@ -16,7 +16,7 @@ TOKEN
 SECRET
 HASH
 
-or something like [https://www.netlify.com/docs/continuous-deployment/](Netlify's environment variable)s using [https://developer.bigcommerce.com/api-docs/getting-started/authentication](API credentials generated on BigCommerce).
+or something like [Netlify's build variables](https://www.netlify.com/docs/continuous-deployment/) using [API credentials generated on BigCommerce](https://developer.bigcommerce.com/api-docs/getting-started/authentication).
 
 _You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
