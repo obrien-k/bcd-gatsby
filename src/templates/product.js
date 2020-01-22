@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 
@@ -21,9 +21,7 @@ export default ({ data }) => {
           <tbody>
             {data.allBigCommerceProducts.edges.map(({ node }, index) => (
               <tr key={index}>
-                <Link to={node.custom_url.url}>
                 <td>{node.name}</td>
-                </Link>
                 <td>
                   <div
                     dangerouslySetInnerHTML={{ __html: node.description }}
@@ -54,10 +52,7 @@ export const query = graphql`
 	  images{
 	  	description
 		url_standard
-  }
-  custom_url{
-    url
-  }
+	}
         }
       }
     }

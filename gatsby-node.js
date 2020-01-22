@@ -21,6 +21,14 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    console.log(JSON.stringify(result, null, 4))
+    result.data.allBigCommerceProducts.edges.forEach(({ node }) =>
+    createPage({
+        path: node.custom_url.url,
+        component: path.resolve('./src/templates/product.js'),
+        context: {
+            slug: node.custom_url.url,
+        },
+    })
+    )
   })
 }
