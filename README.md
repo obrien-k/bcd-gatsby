@@ -37,7 +37,7 @@ _You may want to check out our vibrant collection of [official and community-cre
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd bc-gatsby/
+    cd bcd-gatsby/
     gatsby develop
     ```
 
