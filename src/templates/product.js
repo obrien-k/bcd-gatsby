@@ -4,37 +4,29 @@ import Layout from "../components/layout"
 
 
 export default ({ data }) => {
-  console.log(data)
+  const product = data.allBigCommerceProducts.edges[0].node
+  console.log(product)
+
   return (
     <Layout>
       <div>
-        <h1>My Products</h1> 
         <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Images</th>
-              <th>Price</th>
-            </tr>
-          </thead>
           <tbody>
-            {data.allBigCommerceProducts.edges.map(({ node }, index) => (
-              <tr key={index}>
-                <td>{node.name}</td>
+            
+                <h1>{product.name}</h1>
                 <td>
                   <div
-                    dangerouslySetInnerHTML={{ __html: node.description }}
+                    dangerouslySetInnerHTML={{ __html: product.description }}
                   ></div>
                 </td>
                 <td>
-		{node.images.map(({ url_standard, description }, index) => (
+		{product.images.map(({ url_standard, description }, index) => (
                     <img key={index} alt={description} src={url_standard} />
                   ))}
                 </td>
-                <td>{node.price.toFixed(2)}</td>
-              </tr>
-            ))}
+                <td>{product.price.toFixed(2)}</td>
+              
+           
           </tbody>
         </table>
       </div>
@@ -42,8 +34,8 @@ export default ({ data }) => {
   )
 }
 export const query = graphql`
-  query {
-    allBigCommerceProducts {
+  query ($url: String) {
+    allBigCommerceProducts (filter: {custom_url: {url: {eq: $url}}}) {
       edges {
         node {
           description

@@ -26,7 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
         path: node.custom_url.url,
         component: path.resolve('./src/templates/product.js'),
         context: {
-            slug: node.custom_url.url,
+            url: node.custom_url.url,
         },
     })
     )
