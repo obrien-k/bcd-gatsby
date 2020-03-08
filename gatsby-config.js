@@ -3,9 +3,9 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `BigCom.dev`,
-    description: `BigCom.dev`,
-    author: ``,
+    title: `BigCom.DEV`,
+    description: `BigCom.DEV + Gatsby Example Starter`,
+    author: `Kyle O'Brien`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
