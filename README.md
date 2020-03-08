@@ -3,7 +3,7 @@
   +  <a href="https://www.gatsbyjs.org"><img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" /></a> 
 </p>
 <h1 align="center">
-  BigCom.dev - Gatsby
+  BigCom.DEV - Gatsby
 </h1>
 
 This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React. Implemented is <a href="https://github.com/thirdandgrove/gatsby-source-bigcommerce">gatsby-source-bigcommerce</a>, which allows you to provide API credentials to connect with a BigCommerce store.
